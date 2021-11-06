@@ -35,11 +35,9 @@ humi_control  = 0 //1-Enable, 0-Disable control
 
 // Heat, AC , Humidity Thresholds here [on_threshold, off_threshold]
 heat_temp      = [16, 18]   //in degC
-cold_temp      = [16, 18]   //in degC
+cold_temp      = [18, 16]   //in degC
 humi_threshold = [80, 90]   //in percentage
 
-cold
-unsigned int sendrequest = 0;
 #define LEDpin D4   //set led pin
 #define DHTPIN D1     // Digital pin connected to the DHT sensor
 
