@@ -8,7 +8,7 @@ project derived from https://randomnerdtutorials.com/esp8266-dht11dht22-temperat
 	1. 	Vdd to 3V pin left of USB
 	2. 	GND to G pin left of USB
 	3. 	Signal pin to D1 left of USB
-5. Open the dht11_server.ino file in Ardurino IDE. Update the following Parameters
+5. Open the [dht11_server.ino](https://github.com/wcklyaditya/smart_room/blob/main/dht11_server.ino) file in Ardurino IDE. Update the following Parameters
 	1. Replace with your network credentials
 		1. const char* ssid =      "insert wifi ssid here";
 		2. const char* password =  "insert wifi password here";
