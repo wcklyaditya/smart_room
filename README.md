@@ -4,11 +4,11 @@ project derived from https://randomnerdtutorials.com/esp8266-dht11dht22-temperat
 
 1. Install [Ardurino IDE](https://www.arduino.cc/en/software)
 2. Follow this [guide](https://randomnerdtutorials.com/how-to-install-esp8266-board-arduino-ide/) to install the board drivers and runa hello world LED code, to see if everything is working as expected.
-3. Connect DHT11 sensor as follows
+4. Connect DHT11 sensor as follows
 	1. 	Vdd to 3V pin left of USB
 	2. 	GND to G pin left of USB
 	3. 	Signal pin to D1 left of USB
-5. Open the [dht11_server.ino](https://github.com/wcklyaditya/smart_room/blob/main/dht11_server.ino) file in Ardurino IDE. Update the following Parameters
+5. Open the [dht11_server_revAG.ino](https://github.com/wcklyaditya/smart_room/blob/main/dht11_server_revAG.ino) file in Ardurino IDE. Update the following Parameters
 	1. Replace with your network credentials
 		1. const char* ssid =      "insert wifi ssid here";
 		2. const char* password =  "insert wifi password here";
@@ -28,3 +28,4 @@ project derived from https://randomnerdtutorials.com/esp8266-dht11dht22-temperat
 		1. heat_temp      = [16, 18]   //in degC
 		2. cold_temp      = [18, 16]   //in degC
 		3. humi_threshold = [80, 90]   //in percentage
+	5. Might have to install ESPAsyncWebServer and ESPAsyncTCP for things to work. Use https://bit.ly/3wY1H6h from Molemi IOT to download.
